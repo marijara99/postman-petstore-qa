@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "21a717e6-4ef4-410d-a755-072a5231e3a1",
+		"_postman_id": "e0816a56-aa4a-4bdb-b3b7-b41fe2f62e89",
 		"name": "Petstore",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "24678835"
@@ -488,8 +488,8 @@
 							"    pm.expect(pm.response.json().id).to.eql(pm.environment.get(\"userId\"));\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Username matches global variable\", function () {\r",
-							"    pm.expect(pm.response.json().username).to.eql(pm.globals.get(\"username\"));\r",
+							"pm.test(\"Username matches variable\", function () {\r",
+							"    pm.expect(pm.response.json().username).to.eql(pm.environment.get(\"username\"));\r",
 							"});\r",
 							"\r",
 							"pm.test(\"First name matches environment\", function () {\r",
